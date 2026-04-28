@@ -47,7 +47,7 @@ To compile and test the Post-Quantum consensus engine locally:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/joematopia/blocks.git](https://github.com/joematopia/blocks.git)
+git clone [https://github.com/bitaris/blocks.git](https://github.com/joematopia/blocks.git)
 cd blocks
 
 # Build the Rust kernel
