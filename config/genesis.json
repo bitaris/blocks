@@ -1,0 +1,23 @@
+{
+  "protocol": "Bitaris Genesis 42",
+  "version": "1.0.0-SOVEREIGN",
+  "network_id": "bitopia-mainnet-1",
+  "timestamp": 1714630000,
+  "consensus": {
+    "mechanism": "Proof-of-Space-Time + Proof-of-Energy",
+    "min_orbital_latency_ms": 45,
+    "max_orbital_latency_ms": 120,
+    "enclave_requirement": "ATECC608B_ECDSA_P256"
+  },
+  "governance": {
+    "total_genesis_slots": 42,
+    "architect_pubkey": "0xYOUR_PUBLIC_KEY_HERE",
+    "initial_reputation": 100
+  },
+  "economy": {
+    "utility_token": "$SOV",
+    "governance_token": "$GOV",
+    "exergy_unit": "$EW",
+    "halving_period_blocks": 2100000
+  }
+}
