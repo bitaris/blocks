@@ -2,5 +2,26 @@
 name = "blocks"
 version = "0.1.0"
 edition = "2024"
+authors = ["Bitaris DAO"]
+description = "The Zero-Trust Orbital Ledger for the Bitopia Network State."
 
 [dependencies]
+# Serialization: Bleeding-edge 2026 stable
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.130"
+
+# Post-Quantum Hashing (SHA-3 / Keccak)
+sha3 = "0.11.0"
+
+# High-Performance Hardware Signatures
+# Using the latest dalek-cryptography 3.x stack
+ed25519-dalek = "3.0.0"
+
+# The 2026 Async Runtime (LTS)
+tokio = { version = "1.52.1", features = ["full"] }
+
+# Modernized System Timing for PoE/PoST
+chrono = { version = "0.4.44", features = ["serde"] }
+
+# For P2P Swarm Networking (Type III infra)
+libp2p = "0.55.0"
