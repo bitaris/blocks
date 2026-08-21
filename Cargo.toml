@@ -2,8 +2,8 @@
 name = "blocks"
 version = "0.1.0"
 edition = "2024"
-authors = ["Bitaris DAO"]
-description = "The Zero-Trust Orbital Ledger for the Bitopia Network State."
+authors = ["Bitopia Contributors"]
+description = "Experimental verifier and distributed-systems research for the proposed Bitopia protocol."
 
 [dependencies]
 # Serialization: Bleeding-edge 2026 stable
