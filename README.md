@@ -19,11 +19,24 @@ The current Rust dependency set includes:
 
 ## Axiom integration
 
-Axiom is Bitaris Labs' secure energy-attestation hardware research track. It begins with physical electrical generation measurement at the edge.
+Axiom begins with physical electrical generation measurement at the edge.
 
 The present Axiom breadboard is a functional/provisioning prototype using an ESP32-C3, INA226 metrology, and an ATECC608B secure element. Production hardware-rooted telemetry signing and the final isolated architecture remain under development.
 
 Do not assume that the secure element itself performs metrology or independently polls the sensor. The ATECC608B is a cryptographic device on the I2C interface; the final trust-boundary architecture must account for that constraint.
+
+## Ecosystem boundary: Bitopia and Bitaris Labs
+
+This repository belongs to the **open Bitopia research/protocol surface**. It is not intended to contain the full commercial Bitaris product stack.
+
+- **Bitopia / Axiom Open** - intended open reference architecture, telemetry interfaces, and distributed verification research.
+- **Bitaris Labs** - intended separate Delaware C-corp commercial engineering company that may build hardened, customer-specific hardware and software compatible with the open architecture and, where licensing permits, derived from open components.
+- **Commercial implementation layers** may include custom PCB/enclosure design, secure provisioning and key-management workflows, tamper controls, private integrations, fleet tooling, compliance engineering, deployment support, and other proprietary customer requirements.
+- **Target environments** may include data centers, financial institutions, utilities/power grids, industrial/critical infrastructure, and potentially defense or other high-assurance systems.
+
+No wording in this repository should be interpreted as evidence of current customer deployments, regulatory certification, military qualification, or a completed hardened commercial product. Defense or "military-grade" claims should be made only after applicable requirements and evidence are defined and satisfied.
+
+Proprietary Bitaris customer implementations are intentionally outside the scope of this public repository.
 
 ## Energy evidence
 
@@ -38,6 +51,7 @@ Hardware signatures can strengthen device-origin and integrity evidence. They do
 - Peer-to-peer verification and distributed state.
 - Explicit threat models for any Proof-of-Energy or space-time/location evidence.
 - Post-quantum signature migration after implementation and validation.
+- Open/reference interfaces that commercial hardened implementations can integrate without confusing public research with proprietary client systems.
 - Long-horizon autonomous infrastructure, including orbital/off-world environments.
 
 ## Build
